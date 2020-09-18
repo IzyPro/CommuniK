@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:CommuniK.Renderers" xmlns:local1="clr-namespace:CommuniK.CustomChatCells"
+             x:Class="CommuniK.ChatRoom"
+             BackgroundImageSource="ChatBG.png">
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal" VerticalOptions="Start" Margin="0,0,10,0">
+            <ImageButton Source="menu.png"
+                         WidthRequest="25"
+                         BackgroundColor="Transparent"/>
+            <Label HorizontalOptions="Center" VerticalOptions="Center" Margin="30,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="COMMUNI"
+                              TextColor="White"
+                              FontFamily="{StaticResource NormalFont}"
+                              FontSize="25"/>
+                        <Span Text="K"
+                              TextColor="White"
+                              FontFamily="{StaticResource BoldFont}"
+                              FontSize="25"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </StackLayout>
+    </NavigationPage.TitleView>
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local1:MyDataTemplateSelector x:Key="MessageTemplateSelector"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView 
+			        x:Name="MessagesListView" 
+			        ItemTemplate="{StaticResource MessageTemplateSelector}" 
+			        ItemsSource="{Binding Messages}" 
+			        HasUnevenRows="True" 
+			        ItemSelected="MyListView_OnItemSelected" 
+			        ItemTapped="MyListView_OnItemTapped" 
+			        SeparatorVisibility="None" />
+
+            <Grid VerticalOptions="EndAndExpand" Margin="10,0,10,10" ColumnSpacing="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+                <Frame Padding="5" CornerRadius="8" HasShadow="True" HeightRequest="60" BorderColor="#524FEB">
+                    <local:CustomEditor Placeholder="Enter your text"
+                            BackgroundColor="Transparent"
+                                   PlaceholderColor="#524FEB"
+                                   FontFamily="{StaticResource LightFont}"
+                                   Text="{Binding OutGoingText}"
+                                       IsSpellCheckEnabled="True"
+                                        HeightRequest="100"
+                                        Keyboard="Chat"/>
+                </Frame>
+                <ImageButton Source="send.png"
+                             WidthRequest="35"
+                             HorizontalOptions="EndAndExpand"
+                             BackgroundColor="Transparent"
+                             Margin="0,0,6,0"
+                             Command="{Binding SendMessageCommand}"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

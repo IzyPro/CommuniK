@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:CommuniK.Renderers"
+             mc:Ignorable="d"
+             x:Class="CommuniK.MainPage"
+             BackgroundImageSource="splashscreenbg.png">
+    <ContentPage.Content>
+        <ScrollView>
+            <Frame VerticalOptions="CenterAndExpand" Margin="20" CornerRadius="10" HasShadow="True" MinimumWidthRequest="500">
+                <StackLayout Margin="15">
+                    <Image Source="Robot.png" WidthRequest="100"/>
+                    <Label Text="Hi! I'm CommuniK, pronounced Communi-Kay"
+                           HorizontalOptions="CenterAndExpand"
+                           FontFamily="{StaticResource NormalFont}"
+                           TextColor="Blue"
+                           FontSize="Body"/>
+                    <Label Text="Nice to meet you. What do i call you?"
+                           HorizontalOptions="Center"
+                           FontFamily="{StaticResource NormalFont}"
+                           TextColor="Blue"
+                           FontSize="Body"/>
+                    <local:CustomEntry x:Name="Name" 
+                                       Placeholder="Israel"
+                                       PlaceholderColor="#524FEB"
+                                       Margin="5,25,5,0"
+                                       BorderWidth="1"
+                                       BorderRadius="3"
+                                       BorderColor="Blue"
+                                       FontFamily="{StaticResource LightFont}"
+                                       Keyboard="Chat"/>
+                    <Button HorizontalOptions="FillAndExpand"
+                        Text="Let's Chat"
+                        FontSize="16"
+                        TextColor="White"
+                        BackgroundColor="#524FEB"
+                        Margin="5,30,5,0"
+                        FontFamily="{StaticResource BoldFont}"
+                        Clicked="ChatRoomButtonClicked"/>
+                </StackLayout>
+                <!--<StackLayout>
+                    <Label Text="Sign In"
+                       TextColor="#524FEB"
+                       VerticalOptions="Start"
+                       Margin="5,15,0,0"
+                       FontSize="40"
+                       FontFamily="{StaticResource BoldFont}"/>
+                    -->
+                <!--<Line X1="0"
+                      Y1="0"
+                      X2="0"
+                      Y2="120"
+                      Stroke="blue"
+                      StrokeThickness="1" />-->
+                <!--
+                    <local:CustomEntry Placeholder="Email"
+                                   PlaceholderColor="#524FEB"
+                                   Margin="5,25,5,0"
+                                   BorderWidth="1"
+                                   BorderRadius="3"
+                                   BorderColor="Blue"
+                                   FontFamily="{StaticResource LightFont}"/>
+                    <local:CustomEntry Placeholder="Password"
+                                   PlaceholderColor="#524FEB"
+                                   Margin="5,30,5,0"
+                                   IsPassword="True"
+                                   BorderWidth="1"
+                                   BorderRadius="3"
+                                   BorderColor="Blue"
+                                   FontFamily="{StaticResource LightFont}"/>
+                    <Button HorizontalOptions="FillAndExpand"
+                        Text="Sign In"
+                        FontSize="16"
+                        TextColor="White"
+                        BackgroundColor="#524FEB"
+                        Margin="5,30,5,0"
+                        FontFamily="{StaticResource BoldFont}"
+                        Clicked="ChatRoomButtonClicked"/>
+                    <Label Text="Forgot Password"
+                       FontFamily="{StaticResource BoldFont}"
+                       TextColor="Blue"
+                       FontSize="Body"
+                       Margin="10"
+                       HorizontalTextAlignment="Center">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="ForgotPasswordButtonClicked" NumberOfTapsRequired="1"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <Label HorizontalTextAlignment="Center" Margin="3">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Don't have an account? "
+                                  TextColor="Blue"
+                                  FontSize="Body"
+                                  FontFamily="{StaticResource NormalFont}"/>
+                                <Span Text="Sign Up"
+                                  TextColor="Blue"
+                                  FontSize="Body"
+                                  FontFamily="{StaticResource BoldFont}">
+                                    <Span.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="SignUpButtonClicked" NumberOfTapsRequired="1"/>
+                                    </Span.GestureRecognizers>
+                                </Span>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </StackLayout>-->
+            </Frame>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

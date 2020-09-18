@@ -1,0 +1,156 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Izy\\Documents\\Visual Studio 2019\\Projects\\CommuniK\\CommuniK\\CommuniK.iOS\\CommuniK.iOS.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Izy\\Documents\\Visual Studio 2019\\Projects\\CommuniK\\CommuniK\\CommuniK.iOS\\CommuniK.iOS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Izy\\Documents\\Visual Studio 2019\\Projects\\CommuniK\\CommuniK\\CommuniK.iOS\\CommuniK.iOS.csproj",
+        "projectName": "CommuniK.iOS",
+        "projectPath": "C:\\Users\\Izy\\Documents\\Visual Studio 2019\\Projects\\CommuniK\\CommuniK\\CommuniK.iOS\\CommuniK.iOS.csproj",
+        "packagesPath": "C:\\Users\\Izy\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Izy\\Documents\\Visual Studio 2019\\Projects\\CommuniK\\CommuniK\\CommuniK.iOS\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Izy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "xamarinios10"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "xamarinios10": {
+            "projectReferences": {
+              "C:\\Users\\Izy\\Documents\\Visual Studio 2019\\Projects\\CommuniK\\CommuniK\\CommuniK\\CommuniK.csproj": {
+                "projectPath": "C:\\Users\\Izy\\Documents\\Visual Studio 2019\\Projects\\CommuniK\\CommuniK\\CommuniK\\CommuniK.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "xamarinios10": {
+          "dependencies": {
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.2.0.709249, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\Izy\\Documents\\Visual Studio 2019\\Projects\\CommuniK\\CommuniK\\CommuniK\\CommuniK.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Izy\\Documents\\Visual Studio 2019\\Projects\\CommuniK\\CommuniK\\CommuniK\\CommuniK.csproj",
+        "projectName": "CommuniK",
+        "projectPath": "C:\\Users\\Izy\\Documents\\Visual Studio 2019\\Projects\\CommuniK\\CommuniK\\CommuniK\\CommuniK.csproj",
+        "packagesPath": "C:\\Users\\Izy\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Izy\\Documents\\Visual Studio 2019\\Projects\\CommuniK\\CommuniK\\CommuniK\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Izy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Humanizer": {
+              "target": "Package",
+              "version": "[2.8.26, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "Refractored.MvvmHelpers": {
+              "target": "Package",
+              "version": "[1.6.2, )"
+            },
+            "Xam.Plugin.DeviceInfo": {
+              "target": "Package",
+              "version": "[4.1.1, )"
+            },
+            "Xam.Plugin.Geolocator": {
+              "target": "Package",
+              "version": "[4.5.0.6, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.2.0.709249, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
